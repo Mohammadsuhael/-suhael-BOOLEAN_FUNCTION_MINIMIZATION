@@ -4,9 +4,9 @@
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
 
-F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D 
+F1=((~b & ~d)|(~a & b & d)|(a & b & ~c))
 
-F2=xy’z+x’y’z+w’xy+wx’y+wxy
+F2=((~y & z)|( w & y )|(x & y))
 
 **Equipment Required:**
 
@@ -31,7 +31,18 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+**Program F1:**
+
+Developed by: Mohammad suhael
+
+
+
+
+RegisterNumber: 24007235
+
+
+
+
 ```
 module logic2(a,b,c,d,f1);
 input a,b,c,d;
@@ -40,7 +51,6 @@ assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
 endmodule
 ```
 
- RegisterNumber: 24007235
 
 
 **RTL realization**
@@ -52,6 +62,34 @@ endmodule
 
 **Timing Diagram**
 ![Screenshot 2024-11-12 103612](https://github.com/user-attachments/assets/75a0c9e1-f85a-4985-9058-2165381dbde7)
+
+
+**Program F2:**
+
+```
+module logic3(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
+```
+
+**RTL realization**
+![Screenshot 2024-11-12 104828](https://github.com/user-attachments/assets/858ed8a6-c9e8-4e13-995e-e7109f5cc1a8)
+
+
+**Output:**
+
+
+**RTL**
+
+
+**Timing Diagram**
+![Screenshot 2024-11-12 104704](https://github.com/user-attachments/assets/64b6b60e-7a32-41ef-ace6-d47bb88428d4)
+
+
+
+
 
 **Result:**
 
