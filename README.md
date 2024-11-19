@@ -31,6 +31,13 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
+  
+**Output:**
+
+**RTL**
+
+
+
 **Program F1:**
 
 Developed by: Mohammad suhael
@@ -56,9 +63,6 @@ endmodule
 **RTL realization**
 ![Screenshot 2024-11-12 102822](https://github.com/user-attachments/assets/14cc4217-9a75-4153-9059-768b9c94316b)
 
-**Output:**
-
-**RTL**
 
 **Timing Diagram**
 ![Screenshot 2024-11-12 103612](https://github.com/user-attachments/assets/75a0c9e1-f85a-4985-9058-2165381dbde7)
@@ -78,10 +82,8 @@ endmodule
 ![Screenshot 2024-11-12 104828](https://github.com/user-attachments/assets/858ed8a6-c9e8-4e13-995e-e7109f5cc1a8)
 
 
-**Output:**
 
 
-**RTL**
 
 
 **Timing Diagram**
